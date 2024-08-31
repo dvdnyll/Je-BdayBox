@@ -156,12 +156,11 @@ body {
     border-radius: 10px;
     font-size: 14px;
     cursor: pointer;
-    animation: moveAround 10s infinite;
+    animation: moveAround 20s infinite; /* Durasi animasi diubah menjadi 20s */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .run-button::before, .run-button::after {
     content: '';
     position: absolute;
@@ -182,10 +181,10 @@ body {
 
 @keyframes moveAround {
     0% { top: 70%; left: 50%; }
-    25% { top: 100%; left: 10%; }
-    50% { top: 10%; left: 80%; }
-    75% { top: 2000%; left: 30%; }
-    100% { top: 80%; left: 50%; }
+    25% { top: 30%; left: 75%; }
+    50% { top: 50%; left: 25%; }
+    75% { top: 80%; left: 60%; }
+    100% { top: 70%; left: 50%; }
 }
 
 @keyframes rise {
